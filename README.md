@@ -38,6 +38,6 @@
 
 ## Author
 
-- Website - [Sergo Gabunia](https://www.your-site.com)
+- Website - [Sergo Gabunia](https://github.com/sGabunia)
 - Frontend Mentor - [@paran0ids82](https://www.frontendmentor.io/profile/paran0ids82)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
