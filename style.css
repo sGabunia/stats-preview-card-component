@@ -1,0 +1,128 @@
+:root {
+  --main-bg-color: hsl(233, 47%, 7%);
+  --card-bg-color: hsl(244, 38%, 16%);
+  --accent-color: hsl(277, 64%, 61%);
+
+  --main-hd-color: hsl(0, 0%, 100%);
+  --main-p-color: hsla(0, 0%, 100%, 0.75);
+  --stats-hd-color: hsla(0, 0%, 100%, 0.6);
+
+  --main-font: "Inter", sans-serif;
+  --secondary-font: "Lexend Deca", sans-serif;
+
+  --font-size: 0.94rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  color: var(--main-hd-color);
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  font-weight: 400;
+  display: grid;
+  place-items: center;
+  padding: 2.4rem 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+/* utility classes */
+.text-accent {
+  color: var(--accent-color);
+}
+
+/* fonts */
+.hero__content-title,
+.hero__content-stats-heading {
+  font-family: var(--secondary-font);
+}
+.hero__content-text {
+  color: var(--main-p-color);
+  font-family: var(--main-font);
+}
+
+.hero__content-stats p {
+  color: var(--stats-hd-color);
+}
+
+.hero__content-stats-heading {
+  color: var(--stats-hd-color);
+}
+
+/* card */
+.hero {
+  background-color: var(--card-bg-color);
+  width: 90%;
+  max-width: 375px;
+  text-align: center;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__image {
+  background-color: #9e4cd1;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  overflow: hidden;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding: 2rem 3.5rem;
+}
+
+.hero__content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+@media (min-width: 820px) {
+  .hero {
+    flex-direction: row;
+    max-width: 900px;
+    text-align: left;
+  }
+
+  .hero > * {
+    flex-basis: 100%;
+  }
+
+  .hero__content {
+    order: -1;
+    justify-content: space-around;
+    padding-right: 5rem;
+  }
+
+  .hero__content .stats {
+    flex-direction: row;
+    gap: 2.3rem;
+  }
+
+  .hero__image {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 7px;
+  }
+}
+
+.atribution {
+  position: absolute;
+  bottom: 0;
+}
