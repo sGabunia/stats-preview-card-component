@@ -23,8 +23,8 @@
 
 ### Links
 
-- Solution URL: [](https://github.com/sGabunia/stats-preview-card-component)
-- Live Site URL: [](https://sgabunia.github.io/stats-preview-card-component/)
+- Solution URL: [Solution](https://github.com/sGabunia/stats-preview-card-component)
+- Live Site URL: [Go Live](https://sgabunia.github.io/stats-preview-card-component/)
 
 ## My process
 
